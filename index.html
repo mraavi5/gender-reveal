@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="You're invited to a very special gender reveal!" />
+  <title>Baby Reveal | Boy or Girl?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true">
+    <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">A LITTLE SURPRISE IS ON THE WAY</div>
+      <h1>Baby <span class="accent">Raavi</span></h1>
+      <div class="question">Boy or Girl?</div>
+      <p class="intro">Join us for a sweet celebration as we discover<br class="desktop"> whether Baby Raavi is a little boy or a little girl!</p>
+
+      <div class="balloon-row" aria-hidden="true">
+        <div class="balloon pink">P</div>
+        <div class="balloon neutral">?</div>
+        <div class="balloon blue">B</div>
+      </div>
+
+      <a class="primary-button" href="#details">You're Invited ↓</a>
+    </section>
+
+    <section id="details" class="details section">
+      <div class="section-label">SAVE THE DATE</div>
+      <h2>Let's celebrate!</h2>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="icon">📅</div>
+          <h3>DATE</h3>
+          <p>November 7, 2026</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">⏰</div>
+          <h3>TIME</h3>
+          <p>3:00 PM</p>
+        </div>
+        <div class="info-card">
+          <div class="icon">📍</div>
+          <h3>LOCATION</h3>
+          <p>Our Home<br>4229 Abington Walk NW<br>Kennesaw, GA 30144</p>
+        </div>
+      </div>
+
+      <a class="secondary-button" href="https://www.google.com/maps/search/?api=1&query=4229+Abington+Walk+NW%2C+Kennesaw%2C+GA+30144" target="_blank" rel="noopener">Get Directions</a>
+    </section>
+
+    <section class="countdown-section section">
+      <div class="section-label">THE COUNTDOWN IS ON</div>
+      <h2>Until the big reveal...</h2>
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div><strong id="days">--</strong><span>Days</span></div>
+        <div><strong id="hours">--</strong><span>Hours</span></div>
+        <div><strong id="minutes">--</strong><span>Minutes</span></div>
+        <div><strong id="seconds">--</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="guess-section section">
+      <div class="section-label">MAKE YOUR GUESS</div>
+      <h2>Team Boy or Team Girl?</h2>
+      <p>Before the big reveal, cast your vote!</p>
+
+      <div class="team-buttons">
+        <button class="team-button team-girl" data-team="girl">💗 Team Girl</button>
+        <button class="team-button team-boy" data-team="boy">💙 Team Boy</button>
+      </div>
+      <div id="vote-message" class="vote-message" role="status"></div>
+    </section>
+
+    <section class="rsvp-section section">
+      <div class="rsvp-card">
+        <div class="section-label">WE HOPE YOU CAN JOIN US</div>
+        <h2>Will you be there?</h2>
+        <p>Please RSVP so we can celebrate with you!</p>
+        <a class="primary-button large" href="https://forms.gle/RrKFirxQxiZadwVE7" target="_blank" rel="noopener">RSVP NOW →</a>
+        <p class="small-note">Please RSVP by October 31, 2026</p>
+      </div>
+    </section>
+
+    <section class="closing section">
+      <div class="mini-heart">♥</div>
+      <h2>Pink or Blue,<br>we can't wait to share the news with you!</h2>
+      <p>With love,<br><strong>Manohar Raavi and Nityusha Nannapaneni</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with love for Baby Raavi ♥</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
