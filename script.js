@@ -56,3 +56,20 @@ if (savedGuess) {
     button.click();
   }
 }
+
+// Gift registry: hide cards that still have a placeholder link ("#"),
+// and hide the whole section if no registry links have been added yet.
+(function () {
+  const section = document.getElementById("registry");
+  if (!section) return;
+  let visible = 0;
+  section.querySelectorAll(".registry-card").forEach(card => {
+    const href = card.getAttribute("href");
+    if (!href || href === "#") {
+      card.hidden = true;
+    } else {
+      visible++;
+    }
+  });
+  if (visible === 0) section.hidden = true;
+})();

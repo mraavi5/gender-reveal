@@ -206,6 +206,51 @@ h1 {
 }
 .small-note { font-size: .82rem; margin-top: 20px; }
 
+/* Gift registry */
+.registry-section { background: var(--cream); }
+.registry-intro { max-width: 540px; margin: 0 auto; }
+.registry-grid {
+  max-width: 960px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+.registry-card {
+  flex: 1 1 220px;
+  max-width: 280px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #eee7e7;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(64,56,58,.05);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.registry-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.registry-card:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.registry-icon { font-size: 2rem; }
+.registry-card strong { font-family: "Playfair Display", serif; font-size: 1.2rem; }
+.registry-cta {
+  margin-top: 6px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--pink-soft), var(--blue-soft));
+  color: var(--ink);
+  font-size: .85rem;
+  font-weight: 700;
+}
+@media (prefers-reduced-motion: reduce) {
+  .registry-card { transition: none; }
+  .registry-card:hover { transform: none; }
+}
+
 .closing { background: #fff; }
 .mini-heart {
   font-size: 2rem;
@@ -247,3 +292,5 @@ footer {
   .balloon { width: 68px; height: 88px; }
   .balloon-row { gap: 16px; }
 }
+
+[hidden] { display: none !important; }

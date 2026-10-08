@@ -20,6 +20,10 @@ Create your RSVP form in Google Forms and paste its sharing URL into:
 
 `YOUR_GOOGLE_FORM_URL_HERE`
 
+## Gift registry
+
+In `index.html`, find the `BABY GIFT REGISTRY` section and replace each `href="#"` with your registry link (Amazon, Target, Babylist, etc.). Cards still set to `#` stay hidden, and the whole section stays hidden until at least one link is added.
+
 ## Optional: custom domain
 
 GitHub Pages also supports a custom domain. Add it later under:
